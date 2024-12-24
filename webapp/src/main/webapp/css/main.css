@@ -1,0 +1,207 @@
+/* Fonts */
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+}
+
+/* Global Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Ubuntu-Regular, sans-serif;
+  background: linear-gradient(135deg, #001a00, #004d00); /* Futuristic green gradient */
+  color: #e5e5e5;
+}
+
+a {
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #a4f9c8;
+  transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00ff00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #a4f9c8; /* Light green for headings */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #d9ffd9;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #003d00, #00ff00);
+  padding: 20px;
+  border-bottom: 2px solid #004d00;
+}
+
+header img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  background-color: #004d00;
+  color: #e5e5e5;
+  border: 2px solid #00ff00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #006600;
+  color: #a4f9c8;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"], input[type="number"], input[type="month"], textarea {
+  background: #001a00;
+  color: #e5e5e5;
+  border: 1px solid #004d00;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #00ff00;
+  outline: none;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: #e5e5e5;
+}
+
+table th, table td {
+  border: 1px solid #00ff00;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #004d00;
+}
+
+table tr:nth-child(even) {
+  background-color: #002b00;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.alert-success {
+  background-color: #004d00;
+  color: #00ff00;
+}
+
+.alert-error {
+  background-color: #660000;
+  color: #ffcccc;
+}
+
+/* Containers */
+.container {
+  margin: 20px auto;
+  width: 80%;
+  background: rgba(0, 43, 54, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.container-login100 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrap-login100 {
+  background: rgba(0, 43, 54, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.login100-form-title {
+  font-family: Ubuntu-Bold;
+  font-size: 24px;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+/* Form Input Fields */
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #004d00;
+  margin-bottom: 15px;
+}
+
+.input100 {
+  font-size: 16px;
+  color: #e5e5e5;
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+.input100:focus {
+  border-color: #00ff00;
+}
+
+/* Footer (optional if required) */
+footer {
+  background: #001a00;
+  color: #e5e5e5;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
